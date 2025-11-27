@@ -9,18 +9,19 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="assets/icon.png" rel="icon">
     <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
-    <header class="fixed-bottom-nav">
+    <div class="fixed-bottom-nav">
         <nav class="container d-flex justify-content-center h-100 px-3 px-lg-0 gap-5">
             <a href="index.html#details" class="nav-link-custom">About</a>
             <a href="index.html#skills" class="nav-link-custom">Skills</a>
             <a href="index.html#certs" class="nav-link-custom">Certifications</a>
-            <a href="index.html#contact" class="nav-link-custom">Contact</a>
+            <a href="index.html#" class="nav-link-custom" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
         </nav>
-    </header>
+    </div>
 
     <div id="logo-branding" class="pt-5 text-center">
         <a href="index.html#intro" class="text-decoration-none d-inline-block">
@@ -30,7 +31,7 @@
         </a>
     </div>
 
-    <section id="activities" class="py-5">
+    <div id="activities" class="py-5">
         <div class="container py-4">
             <div class="text-center mb-5">
                 <h2 class="fs-3 fw-bold mb-2 text-center">My Projects and Activities</h2>
@@ -38,9 +39,7 @@
                     A showcase of academic projects
                 </p>
             </div>
-
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
                 <div class="col">
                     <div class="activity-card">
                         <div class="preview-frame-wrapper">
@@ -64,7 +63,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col">
                     <div class="activity-card">
                         <div class="preview-frame-wrapper">
@@ -88,10 +86,39 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
-    </section>
+    </div>
+
+    <div class="modal fade modal-bottom-right" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="contactModalLabel">Let's Connect!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="d-flex justify-content-center gap-4">
+                        <a href="mailto:altheacondes145@gmail.com" class="text-secondary contact-link" aria-label="Email Address">
+                            <i class="fas fa-envelope fs-1 text-dark"></i>
+                        </a>
+                        <a href="https://www.facebook.com/aj.condes.14" target="_blank" class="text-secondary contact-link" aria-label="Facebook Profile">
+                            <i class="fa-brands fa-facebook fs-1 text-dark"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/condes-althea-jade-gomez-715883388/" target="_blank" class="text-secondary contact-link" aria-label="LinkedIn Profile">
+                            <i class="fa-brands fa-linkedin fs-1 text-dark"></i>
+                        </a>
+                        <a href="https://github.com/thewaaan" target="_blank" class="text-secondary contact-link" aria-label="GitHub Profile">
+                            <i class="fab fa-github fs-1 text-dark"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <p class="small text-secondary-emphasis m-0">Don't forget to check and contact my accounts!</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
